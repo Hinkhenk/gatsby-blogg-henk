@@ -6,7 +6,7 @@ export const NavWrapper = styled.nav`
   display: flex;
   align-items: center;
 
-  img {
+  & img {
     height: 30px;
   }
 
