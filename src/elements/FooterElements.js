@@ -9,7 +9,7 @@ justify-content: center;
 align-items: flex-start;
 
 @media ${props => props.theme.breakpoints.tablet} {
-    grid-column: 2 / span 6;
+    grid-column: 1 / span 6;
 }
 `
 
