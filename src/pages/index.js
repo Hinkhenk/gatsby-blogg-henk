@@ -1,10 +1,18 @@
 import React from "react"
-import {Container, FeatureImage} from "../components"
+import { Container, FeatureImage, Content, ContentCard } from "../components"
 
 const IndexPage = () => {
   return (
     <Container>
-      <FeatureImage/>
+      <FeatureImage />
+      <Content>
+        <ContentCard
+          date="March 22, 2020"
+          title="lorem ipsum"
+          excerpt="lorem ipsum, plus extra"
+          slug="/test"
+        />
+      </Content>
     </Container>
   )
 }
