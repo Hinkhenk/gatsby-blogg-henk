@@ -12,15 +12,15 @@ export const PaginationWrapper = styled.div`
   a:nth-child(1) {
     color: ${props =>
       props.isFirst ? props.theme.colors.dark3 : props.theme.colors.dark1};
-    pointer-events: ${props => (isFirst ? "none" : "auto")};
-    cursor: ${props => (isFirst ? "default" : "pointer")};
+    pointer-events: ${props => (props.isFirst ? "none" : "auto")};
+    cursor: ${props => (props.isFirst ? "default" : "pointer")};
   }
 
   a:nth-child(2) {
     color: ${props =>
       props.isLast ? props.theme.colors.dark3 : props.theme.colors.dark1};
-    pointer-events: ${props => (isLast ? "none" : "auto")};
-    cursor: ${props => (isLast ? "default" : "pointer")};
+    pointer-events: ${props => (props.isLast ? "none" : "auto")};
+    cursor: ${props => (props.isLast ? "default" : "pointer")};
   }
 
   @media ${props => props.theme.breakpoints.tablet} {
